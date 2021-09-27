@@ -126,12 +126,10 @@ const templates = {
         div.classList.remove(itemSelectable);
       }
       div.dataset.deletable = '';
-      /** @todo This MUST be localizable, not hardcoded! */
-      const REMOVE_ITEM_TEXT = 'Remove item';
       const removeButton = Object.assign(document.createElement('button'), {
-        type: 'button',
+        type: 'div',
         className: button,
-        innerHTML: REMOVE_ITEM_TEXT,
+        innerHTML: '',
       });
       removeButton.setAttribute(
         'aria-label',
