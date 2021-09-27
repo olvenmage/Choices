@@ -126,8 +126,7 @@ const templates = {
         div.classList.remove(itemSelectable);
       }
       div.dataset.deletable = '';
-      const removeButton = Object.assign(document.createElement('button'), {
-        type: 'div',
+      const removeButton = Object.assign(document.createElement('div'), {
         className: button,
         innerHTML: '',
       });
