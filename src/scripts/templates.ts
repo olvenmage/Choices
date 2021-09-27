@@ -131,10 +131,7 @@ const templates = {
         className: button,
         innerHTML: '',
       });
-      removeButton.setAttribute(
-        'aria-label',
-        `${REMOVE_ITEM_TEXT}: '${value}'`,
-      );
+      removeButton.setAttribute('aria-label', `Remove item: '${value}'`);
       removeButton.dataset.button = '';
       div.appendChild(removeButton);
     }
